@@ -7,7 +7,7 @@ function MyApp() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:8080/list')
+    fetch('https://srm-fdp-commerce-backend-wprz.onrender.com/list')
       .then((response) => response.json())
       .then((data) => setProducts(data))
     console.log("Api called")

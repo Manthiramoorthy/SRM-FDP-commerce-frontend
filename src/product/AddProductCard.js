@@ -14,7 +14,7 @@ function AddProductCard() {
             "thumbnail": thumbnail
         }
 
-        fetch("http://localhost:8080/list", {
+        fetch("https://srm-fdp-commerce-backend-wprz.onrender.com/list", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
