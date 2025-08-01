@@ -24,6 +24,7 @@ function MyApp() {
 
   return (
     <div className="m-4">
+      <a href="/add-product" className="btn btn-success">Add Product</a>
       <button onClick={incrementClicked}>Increment</button>
       <h1>{count}</h1>
       <div className="row justify-content-center">
