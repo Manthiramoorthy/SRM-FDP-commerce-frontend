@@ -1,15 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
-import ProductCard from './ProductCard';
+import ProductCard from './product/ProductCard';
 import { useEffect, useState } from "react";
 
 function MyApp() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    fetch('https://dummyjson.com/products')
+    fetch('http://localhost:8080/list')
       .then((response) => response.json())
-      .then((data) => setProducts(data.products))
+      .then((data) => setProducts(data))
     console.log("Api called")
   }, [])
 
